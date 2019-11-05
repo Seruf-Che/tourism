@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 950px;
+  margin: 0 auto;
+}
+
+.wrapper--column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper--column-left {
+  flex-direction: column;
+  padding: 70px 0 125px 0;
+}
+
+@media only screen and @tablet-width {
+
+  .wrapper {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+}

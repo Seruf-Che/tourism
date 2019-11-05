@@ -1,0 +1,147 @@
+.gallery__wrapper {
+  margin: 55px 0 0 0;
+}
+
+.gallery {
+  width: 700px;
+}
+
+.gallery__caption {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery__heading {
+  padding-right: 60px;
+  margin: 0;
+  color: @color-heading;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.gallery__content {
+  margin: 0 0 55px 0;
+  line-height: 20px;
+}
+
+.gallery__images {
+  float: left;
+  position: relative;
+  width: 700px;
+  height: 510px;
+}
+
+.gallery__item {
+  position: absolute;
+}
+
+.gallery__img {
+  display: block;
+  transition: all 0.5s;
+
+  &:hover {
+    filter: sepia(1);
+  }
+}
+
+.gallery__item:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+
+.gallery__item:nth-child(1)  .gallery__img {
+  height: 205px;
+  width: 300px;
+}
+
+.gallery__item:nth-child(2) {
+  left: 300px;
+  top: 0;
+}
+
+.gallery__item:nth-child(2)  .gallery__img {
+  height: 275px;
+  width: 400px;
+}
+
+.gallery__item:nth-child(3) {
+  left: 0;
+  top: 205px;
+}
+
+.gallery__item:nth-child(3)  .gallery__img {
+  height: 305px;
+  width: 300px;
+}
+
+.gallery__item:nth-child(4) {
+  left: 300px;
+  top: 265px;
+}
+
+.gallery__item:nth-child(4)  .gallery__img {
+  height: 110px;
+  width: 180px;
+}
+
+.gallery__item:nth-child(5) {
+  left: 300px;
+  top: 375px;
+}
+
+.gallery__item:nth-child(5)  .gallery__img {
+  height: 135px;
+  width: 180px;
+}
+
+.gallery__item:nth-child(6) {
+  left: 480px;
+  top: 265px;
+}
+
+.gallery__item:nth-child(6)  .gallery__img {
+  height: 245px;
+  width: 220px;
+}
+
+@media only screen and @tablet-width {
+
+  .gallery {
+    width: 100%;
+  }
+
+
+  .gallery__content {
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+
+  .gallery__images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: initial;
+  }
+
+  .gallery__item {
+    position: initial;
+    width: 100%;
+  }
+
+  .gallery .gallery__images .gallery__img {
+    height: 300px;
+    width: 470px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+
+  .gallery .gallery__images .gallery__img {
+    height: 192px;
+    width: 300px;
+  }
+}
